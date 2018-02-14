@@ -1,4 +1,4 @@
 source 'https://gems.ruby-china.org/'
 
 gem 'cztop'
-gem 'iruby', path: '../../refs/contributions/iruby'
+gem 'iruby', git: 'https://github.com/jameszhan/iruby.git'

@@ -43,7 +43,7 @@ jupyter notebook .
 - [Ruby On Rails](http://rubyonrails.org/)
 - [Ruby Toolbox](https://www.ruby-toolbox.com/)
 - [Ruby元编程](https://www.amazon.cn/dp/B013QMKP80/ref=sr_1_1?ie=UTF8&qid=1519613945&sr=8-1&keywords=ruby+%E5%85%83%E7%BC%96%E7%A8%8B)
-- [Ruby Style Guide](https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md)
+- [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
 
 ----
 

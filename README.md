@@ -90,9 +90,12 @@ chmod +x generate
 	- [03.03.**循环**](03-ruby-syntax/03.03-loop-statements.ipynb)
 	- [03.04.**迭代器**](03-ruby-syntax/03.04-iterators.ipynb)
 	- [03.05.**函数**](03-ruby-syntax/03.05-functions.ipynb)
+	- [03.06.**代码块**](03-ruby-syntax/03.06-blocks.ipynb)
+	- [03.07.**作用域**](03-ruby-syntax/03.07-scope.ipynb)
 	- [03.09.**异常**](03-ruby-syntax/03.09-exceptions.ipynb)
 	- [03.10.**Ruby 元编程技巧**](03-ruby-syntax/03.10-ruby-meta-programming.ipynb)
 	- [03.11.**Ruby 代码风格**](03-ruby-syntax/03.11-ruby-style-guide.ipynb)
 - [04. **Ruby 面向对象编程**](04-ruby-oop)
 - [05. **Ruby 进阶**](05-ruby-advanced)
 - [06. **Ruby On Rails**](06-ruby-on-rails)
+

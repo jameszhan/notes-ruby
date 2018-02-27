@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+require 'thor'
+require 'fileutils'
+
+class Generate < Thor
+
+  desc "run --output=static-files --to=markdown", "to options include ['asciidoc', 'html', 'html_ch', 'html_embed', 'html_toc', 'html_with_lenvs', 'html_with_toclenvs', 'latex', 'latex_with_lenvs', 'markdown', 'notebook', 'pdf', 'python', 'rst', 'script', 'slides']"
+  option :output, default: 'static-files'
+  option :to, default: 'markdown'
+  def static()
+  	stored_dir = "#{options[:output]}/#{options[:to]}"
+    Dir.glob("**/*.ipynb") do |file|
+    	  `jupyter nbconvert --to #{options[:to]} #{file}`
+
+    	  generated_file_name = file.gsub(/\.ipynb$/, ".#{ext_for(options[:to])}")
+				parent_dir = "#{stored_dir}/#{File.dirname(generated_file_name)}"
+				FileUtils.mkdir_p(parent_dir) unless Dir.exist?(parent_dir)
+
+				FileUtils.mv(generated_file_name, "#{stored_dir}/#{generated_file_name}")
+				say "#{file} => #{stored_dir}/#{generated_file_name}", :green, true
+    end
+  end  
+
+  private 
+  def ext_for(type)
+  	case type
+  	when /html/ then 'html'
+  	when 'markdown' then 'md'
+  	else 
+  		type 
+  	end	
+  end
+  
+end
+
+Generate.start(ARGV)

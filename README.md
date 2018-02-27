@@ -45,11 +45,31 @@ jupyter notebook .
 - [Ruby元编程](https://www.amazon.cn/dp/B013QMKP80/ref=sr_1_1?ie=UTF8&qid=1519613945&sr=8-1&keywords=ruby+%E5%85%83%E7%BC%96%E7%A8%8B)
 - [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
 
-----
 
-## 目录
+
+## 生成静态文件
 
 可以在 Notebook 中打开 `generate-static-files.ipynb` 来生成静态的 HTML 文件。
+
+使用命令行工具生成。
+
+```bash
+gem install thor
+
+chmod +x generate
+
+
+# 默认生成 markdown 文件到 static-files 目录
+./generate static
+
+# 生成 pdf 文件到 static-files 目录
+./generate static --to pdf  
+
+# 生成 html 文件到 generated 目录
+./generate static --to html --output=generated 
+```
+
+## 目录
 
 - [01. **Ruby 快速概览**](01-ruby-overview)
 	- [01.01.**Ruby 简介**](01-ruby-overview/01.01-ruby-overview.ipynb)

@@ -18,7 +18,7 @@
 	- [03.04.**迭代器**](03-ruby-syntax/03.04-iterators.ipynb)
 	- [03.05.**函数**](03-ruby-syntax/03.05-functions.ipynb)
 	- [03.06.**代码块**](03-ruby-syntax/03.06-blocks.ipynb)
-	- [03.07.**作用域**](03-ruby-syntax/03.07-scope.ipynb)
+	- [03.07.**变量作用域**](03-ruby-syntax/03.07-scope.ipynb)
 	- [03.09.**异常**](03-ruby-syntax/03.09-exceptions.ipynb)
 	- [03.10.**Ruby 元编程技巧**](03-ruby-syntax/03.10-ruby-meta-programming.ipynb)
 	- [03.11.**Ruby 代码风格**](03-ruby-syntax/03.11-ruby-style-guide.ipynb)
